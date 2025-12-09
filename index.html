@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>(⁀ᗢ⁀) Formulário de Perfil (⁀ᗢ⁀)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            width: 320px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #fff6e4;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .btn-primary {
+            background: rgb(41, 240, 230);
+            color: rgb(0,0,0);
+        }
+
+        .btn-primary:hover {
+            background: #22a59a;
+        }
+
+        .btn-google {
+            background: #ffffff;
+            color: #493737;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-google:hover {
+            background: #f1f1f1;
+        }
+
+        .aviso-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .aviso-texto {
+            font-size: 12px;
+            max-width: 180px;
+        }
+
+        .aviso-img {
+            width: 55px;
+        }
+
+        .link-pequeno {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+
+        .link-pequeno a {
+            color: #0000EE;
+            text-decoration: none;
+        }
+
+        .link-pequeno a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>  Divirta-se com Sweet Surprises </h3>
+
+    <form action="processador.php" method="POST">
+        <label>Nome:</label>
+        <input type="text" name="nome" required>
+
+        <label>Idade:</label>
+        <input type="number" name="idade" required>
+
+        <label>Altura (em metros):</label>
+        <input type="number" step="0.01" name="altura" required>
+
+        <label>Cor favorita:</label>
+        <input type="color" name="cor" required>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+
+        <button type="button" class="btn btn-google">
+            <img src="https://yt3.googleusercontent.com/h2ylqNpOLqGpeCzz2KRXA9wkESjn652-oGmGYTLw4jCQpianll14FdL-Q8HoM82j1fKhe0ey=s900-c-k-c0x00ffffff-no-rj" width="18" alt="Google">
+            Entrar com Google
+        </button>
+
+        <div class="link-pequeno">
+            Já tem uma conta? <a href="#">Entrar</a>
+        </div>
+
+        <div class="aviso-box">
+            <h6 class="aviso-texto">
+                Aviso: menores de 14 só podem jogar com permissão de responsáveis por conter cenas violentas.
+            </h6>
+            <img class="aviso-img" src="https://blogjatefalei.wordpress.com/wp-content/uploads/2014/09/classificacao_14anos.png">
+        </div>
+    </form>
+
+</body>
+</html>
